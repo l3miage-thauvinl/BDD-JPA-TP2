@@ -5,7 +5,7 @@ import java.util.Set;
 
 @Entity
 @Table
-public class Etudiant {
+public class EtudiantEntity {
     @Id
     private Long alagan;
     private String nom;
@@ -14,5 +14,5 @@ public class Etudiant {
             joinColumns = @JoinColumn(name = "etudiant_agalan"),
             inverseJoinColumns = @JoinColumn(name = "club_sportif_id"))
     @ManyToMany
-    private Set<ClubSportif> clubSportifs;
+    private Set<ClubSportifEntity> clubSportifEntities;
 }

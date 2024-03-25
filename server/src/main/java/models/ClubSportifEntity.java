@@ -8,12 +8,12 @@ import java.util.Set;
 
 @Entity
 @Table
-public class ClubSportif {
+public class ClubSportifEntity {
     @Id
     private Long id;
     private String nom;
     private String description;
     @ManyToMany
-    private Set<Etudiant> etudiants;
+    private Set<EtudiantEntity> etudiantEntities;
 
 }

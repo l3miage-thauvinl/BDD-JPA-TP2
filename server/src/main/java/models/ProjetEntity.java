@@ -5,7 +5,7 @@ import java.util.Set;
 
 @Entity
 @Table(name="projet")
-public class Projet {
+public class ProjetEntity {
     @Id
     @Column(name="id")
     private long id;
@@ -13,6 +13,6 @@ public class Projet {
     private String name;
     @Column(name="description")
     private String description;
-    @ManyToMany
-    private Set<DevelopperMiage> developpers;
+    @ManyToMany(mappedBy = "projects")
+    private Set<DevelopperMiageEntity> developpers;
 }
