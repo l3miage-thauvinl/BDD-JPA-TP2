@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 @Inheritance(strategy =  InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="type")
-public class Employe {
+public class EmployeEntity {
     @Id
     private Long id;
     private String nom;

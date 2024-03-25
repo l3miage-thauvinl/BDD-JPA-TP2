@@ -2,11 +2,10 @@ package models;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 
 @Entity
 @DiscriminatorValue("D")
-public class Developpeur extends Employe{
+public class DeveloppeurEntity extends EmployeEntity {
     private String langagePrefere;
     private String niveauCompetence;
 }

@@ -4,6 +4,6 @@ import javax.persistence.*;
 
 @Entity
 @DiscriminatorValue("M")
-public class Manager extends Employe{
+public class ManagerEntity extends EmployeEntity {
     private String niveauGestion;
 }
